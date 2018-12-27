@@ -1,0 +1,34 @@
+// style.scss
+// Variables
+
+
+// Colors
+$blue-color : #74b9ff !default;
+$black-color : #323232 !default;
+$grey-color : #f5f6fa !default;
+
+// Background Colors
+.bg {
+	&-black {
+		background: $black-color;
+		color: $grey-color;
+	}
+	&-blue {
+		background: $blue-color;
+	}
+	&-grey {
+		background: $grey-color;
+	}
+}
+
+// Layout
+.herounit {
+	div {
+		height: 90vh;
+	}
+}
+
+// Logo
+.logo {
+	width: 100px;
+}
