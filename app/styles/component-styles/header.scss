@@ -1,0 +1,23 @@
+// HEADER
+
+.header {
+	border-bottom: 1px solid $grey-color;
+	
+	.nav {
+		background: transparent;
+	}
+
+	.social-icons {
+		width: 120px;
+		@extend .justify-content-between;
+
+		a {
+			font-size: 22px;
+		}
+	}
+
+	.logo {
+		height: 50px;
+	}
+
+}

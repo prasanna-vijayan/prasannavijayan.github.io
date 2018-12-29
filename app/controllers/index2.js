@@ -1,25 +1,8 @@
 import Controller from '@ember/controller';
-
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
 
-	variables : {},
-
-	init() {
-		this._super( ...arguments );
-		this.setupVariables();
-	},
-
-	setupVariables() {
-		let variables = {
-			images: {
-				logoURL   : "../assets/pvy.svg"
-			}
-		}
-
-
-		this.set( 'variables', variables );
-	}
-
+	userData  : service()
 
 });
