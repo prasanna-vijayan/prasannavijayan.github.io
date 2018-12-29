@@ -12,6 +12,7 @@ export default Service.extend({
 		let variables = {
 			images: {
 				logoURL   : '../assets/pvy.svg',
+				dpURL     : '../assets/prasanna.jpeg',
 			},
 
 			socialIcons : [{

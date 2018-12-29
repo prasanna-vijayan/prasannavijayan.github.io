@@ -1,0 +1,15 @@
+.herounit {
+	height: 70vh;
+
+	h1 {
+		color: #727272;
+	}
+
+	.image-round {
+		width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-bottom: 50px;
+    border: 5px solid $grey-color;
+	}
+}

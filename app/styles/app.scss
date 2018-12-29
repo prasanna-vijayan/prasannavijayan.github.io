@@ -1,13 +1,10 @@
 @import "ember-cli-bootstrap-4/bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-
 @import "theme/style";
 
 // Fonts
 body {
 	outline: 0;
-	font-family: "Titillium Web", sans-serif;
 	font-size: 18px;
 	margin: 0;
 	height: 100%;
