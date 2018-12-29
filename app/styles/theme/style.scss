@@ -6,7 +6,7 @@
 
 // Colors
 $blue-color : #74b9ff !default;
-$black-color : #000000 !default;
+$black-color : #343a40 !default;
 $grey-color : #f5f6fa !default;
 
 // // Background Colors
@@ -39,3 +39,4 @@ $grey-color : #f5f6fa !default;
 @import '../component-styles/header';
 @import '../component-styles/herounit';
 @import '../component-styles/section';
+@import '../component-styles/footer';
