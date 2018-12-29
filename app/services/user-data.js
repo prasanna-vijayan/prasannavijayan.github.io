@@ -32,7 +32,19 @@ export default Service.extend({
 				link  : 'mailto:prasannavijayan446@gmail.com'
 			}],
 
-			socialIconWidth : 40
+			socialIconWidth : 40,
+
+			sectionDetails: [{
+				title: 'aboutme',
+				description: 'aboutme_description',
+				icon: 'terminal',
+				bkg: 'bg-grey'
+			}, {
+				title: 'bragging',
+				description: 'bragging_description',
+				icon: 'rocket',
+				bkg: 'bg-blue'
+			}]
 		}
 
 		this.set( 'variables', variables );
