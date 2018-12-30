@@ -34,6 +34,11 @@ export default Service.extend({
 				title : 'envelope',
 				link  : 'mailto:prasannavijayan446@gmail.com',
 				class  : 'icon-envelope'
+			},
+			{
+				title : 'github',
+				link  : 'mailto:prasannavijayan446@gmail.com',
+				class  : 'icon-github'
 			}],
 
 			socialIconWidth : 40,
