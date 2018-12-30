@@ -44,6 +44,11 @@ export default Service.extend({
 				description: 'bragging_description',
 				icon: 'rocket',
 				bkg: 'bg-blue'
+			},{
+				title: 'download',
+				description: 'download_description',
+				icon: 'download',
+				bkg: 'bg-grey'
 			}]
 		}
 
