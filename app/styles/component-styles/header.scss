@@ -1,0 +1,51 @@
+// HEADER
+
+.header {
+	border-bottom: 1px solid $grey-color;
+	box-shadow: 0 0 2px #717171;
+	
+	.nav {
+		background: transparent;
+	}
+
+	.social-icons {
+		width: 120px;
+		@extend .justify-content-between;
+
+		a {
+			font-size: 22px;
+			color: grayscale(#2C6A93);
+		}
+
+		.icon {
+			&-instagram {
+				&:hover {
+					color: #2C6A93;
+				}
+			}
+
+			&-twitter {
+				&:hover {
+					color: #00B6F1;
+				}	
+			}
+
+			&-linkedin {
+				&:hover {
+					color: #04669A;
+				}
+			}
+
+			&-envelope {
+				&:hover {
+					color: #191970;
+				}
+			}
+		}
+	}
+
+	.logo {
+		height: 50px;
+	}
+
+}

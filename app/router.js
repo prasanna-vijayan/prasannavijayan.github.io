@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-	this.route('index2', { path: "/index2"});
+	this.route('index', { path: "/index"});
 	this.route('404', { path: '/*path' });
 });
 
