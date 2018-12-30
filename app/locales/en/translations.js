@@ -3,6 +3,6 @@ export default {
 	aboutme_description: 'Currently working in Cognizant.',
 	bragging: 'Bragging Rights',
 	bragging_description: '1st GSA of KLN College of Engineering',
-	download: 'Download',
-	download_description: 'Download my resume'
+	download: 'Download Resume',
+	download_description: '<a target="_blank" href={{link}}>Resume</a>'
 };

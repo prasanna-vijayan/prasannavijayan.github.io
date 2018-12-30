@@ -6,7 +6,7 @@
   <div>
     <div class="form-inline my-2 my-lg-0 social-icons">
       {{#each socialIcons as | social |}}
-        <a href={{social.link}} target="_blank" rel="noopener">{{fa-icon social.title}}</a>
+        <a class={{social.class}} href={{social.link}} target="_blank" rel="noopener">{{fa-icon social.title}}</a>
       {{/each}}
     </div>
   </div>

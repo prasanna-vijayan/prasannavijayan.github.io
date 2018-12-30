@@ -17,19 +17,23 @@ export default Service.extend({
 
 			socialIcons : [{
 				title : 'instagram',
-				link  : 'https://www.instagram.com/prasannavijayan'
+				link  : 'https://www.instagram.com/prasannavijayan',
+				class  : 'icon-instagram'
 			},
 			{
 				title : 'twitter',
-				link  : 'https://twitter.com/prasannavijayan'
+				link  : 'https://twitter.com/prasannavijayan',
+				class  : 'icon-twitter'
 			},
 			{
 				title : 'linkedin',
-				link  : 'https://www.linkedin.com/in/prasannavijayan'
+				link  : 'https://www.linkedin.com/in/prasannavijayan',
+				class  : 'icon-linkedin'
 			},
 			{
 				title : 'envelope',
-				link  : 'mailto:prasannavijayan446@gmail.com'
+				link  : 'mailto:prasannavijayan446@gmail.com',
+				class  : 'icon-envelope'
 			}],
 
 			socialIconWidth : 40,
@@ -48,6 +52,7 @@ export default Service.extend({
 				title: 'download',
 				description: 'download_description',
 				icon: 'download',
+				link: 'https://tinyurl.com/ybwf2brv',
 				bkg: 'bg-grey'
 			}]
 		}

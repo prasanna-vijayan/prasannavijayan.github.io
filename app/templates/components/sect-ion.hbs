@@ -2,7 +2,11 @@
 <div class="section {{sectionDetail.bkg}}">
 	<div class="container d-flex flex-column">
 			<div class="title">{{fa-icon sectionDetail.icon }} {{t sectionDetail.title}}</div>
-			<div class="subsection">{{t sectionDetail.description}}</div>
+			{{#if sectionDetail.link}}
+				<div class="subsection">{{t sectionDetail.description link=sectionDetail.link}}</div>
+			{{else}}
+				<div class="subsection">{{t sectionDetail.description}}</div>
+			{{/if}}
 	</div>
 </div>
 {{/each}}
