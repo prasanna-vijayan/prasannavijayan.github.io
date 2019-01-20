@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: 'pvycode/emberapp'
+    ports:
+      - "4200:4200"
+      - "7020:7020"
+      - "7357:7357"
+    volumes:
+      - .:/myapp
