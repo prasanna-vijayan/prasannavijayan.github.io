@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 export default Service.extend({
 
 	i18n      : service(),
-	variables : {},
+	variables : undefined,
 
 	init() {
 		this._super( ...arguments );
