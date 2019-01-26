@@ -1,8 +1,10 @@
 .herounit {
-	height: calc(100vh - 80px);
+	height: 70vh;
+	background: rgb(87,134,215);
+	background: linear-gradient(90deg, rgba(87,134,215,1) 0%, rgba(43,141,191,1) 35%, rgba(49,156,223,1) 100%);
 
 	h1 {
-		color: #5e5e5e;
+		color: #fefefe;
 	}
 
 	.image-round {

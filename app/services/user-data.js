@@ -22,21 +22,25 @@ export default Service.extend({
 			socialIcons : [
 			{
 				title : 'twitter',
+				alt : 'Twitter',
 				link  : 'https://twitter.com/prasannavijayan',
 				class  : 'icon-twitter'
 			},
 			{
 				title : 'linkedin',
+				alt : 'Linkedin',
 				link  : 'https://www.linkedin.com/in/prasannavijayan',
 				class  : 'icon-linkedin'
 			},
 			{
 				title : 'envelope',
+				alt : 'Mail',
 				link  : 'mailto:prasannavijayan446@gmail.com',
 				class  : 'icon-envelope'
 			},
 			{
 				title : 'github',
+				alt : 'Github',
 				link  : 'mailto:prasannavijayan446@gmail.com',
 				class  : 'icon-github'
 			}],
@@ -54,7 +58,7 @@ export default Service.extend({
 				title: 'bragging',
 				description: 'bragging_description',
 				icon: 'rocket',
-				bkg: 'bg-blue'
+				bkg: 'bg-grey'
 			},{
 				title: 'contribution',
 				description: 'contribution_description',
@@ -67,7 +71,7 @@ export default Service.extend({
 				description: 'download_description',
 				icon: 'download',
 				link: 'https://tinyurl.com/ybwf2brv',
-				bkg: 'bg-blue'
+				bkg: 'bg-grey'
 			}]
 		}
 
