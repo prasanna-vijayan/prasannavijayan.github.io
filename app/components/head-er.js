@@ -9,6 +9,8 @@ export default Component.extend({
 		// When Adding multiple icons it will grow automatically
 		let iconWidth = this.get("userData.variables.socialIcons").length * 40;
 		this.$('.social-icons').css('width', `${iconWidth}px`);
+
+		$('[data-toggle="tooltip"]').tooltip();
   },
 
   socialIcons : computed('userData', function() {
