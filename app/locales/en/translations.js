@@ -1,5 +1,6 @@
 export default {
 	home: 'Home',
+	quote: 'Dream. Believe. Work. Become.',
 	aboutme: 'About Me',
 	aboutme_description: "Hi, Pvy is my tag/nick name and I am 100% sure that my name doesn't sound like superhero's alter ego name. :P <br/> Currently working in Cognizant.",
 	aboutme_tag: 'moviebuff,PS4,linux,ember,theflash',

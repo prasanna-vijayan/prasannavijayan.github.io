@@ -49,7 +49,7 @@ export default Service.extend({
 				icon: 'terminal',
 				bkg: 'bg-grey',
 				tags : this.get( 'i18n' ).t('aboutme_tag').string.split(','),
-				quote: true
+				quote: this.get( 'i18n' ).t('quote').string
 			}, {
 				title: 'bragging',
 				description: 'bragging_description',
