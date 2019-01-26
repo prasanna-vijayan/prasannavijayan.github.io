@@ -21,6 +21,15 @@ $grey-color : #f5f6fa !default;
 	&-grey {
 		background: $grey-color;
 	}
+	&-red {
+		background: red;
+	}
+	&-yellow {
+		background: yellow;
+	}
+	&-green {
+		background: green;
+	}
 }
 
 // // Layout

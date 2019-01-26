@@ -7,6 +7,18 @@
 			{{else}}
 				<div class="subsection">{{t sectionDetail.description}}</div>
 			{{/if}}
+
+			{{#if sectionDetail.quote}}
+				<div class="quote"><span>"</span>Dream. Work. Believe. Become.</div>
+			{{/if}}
+
+			{{#if sectionDetail.tags}}
+				<div class="tag_list">
+					{{#each sectionDetail.tags as | tag |}}
+						<div class="tag bg-green">{{tag}}</div>
+					{{/each}}
+				</div>
+			{{/if}}
 	</div>
 </div>
 {{/each}}

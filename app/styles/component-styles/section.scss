@@ -10,4 +10,21 @@
 		font-size: 18px;
 		line-height: 35px;
 	}
+
+	.tag_list {
+		padding: 20px 0;
+		.tag {
+			border: 1px solid $black-color;
+			color: white;
+			display: inline;
+			font-size: 13px;
+			padding: 0 10px;
+		}
+	}
+
+	.quote {
+		@extend .merienda;
+		font-size: 24px;
+		padding: 20px 0;
+	}
 }
