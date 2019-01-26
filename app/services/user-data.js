@@ -1,6 +1,9 @@
 import Service from '@ember/service';
+import { inject as service } from '@ember/service';
 
 export default Service.extend({
+
+	i18n      : service(),
 	variables : {},
 
 	init() {
@@ -10,16 +13,13 @@ export default Service.extend({
 
 	setupVariables() {
 		let variables = {
+			currentYear: ( new Date() ).getFullYear(),
 			images: {
 				logoURL   : '../assets/pvy.svg',
 				dpURL     : '../assets/prasanna.jpeg',
 			},
 
-			socialIcons : [{
-				title : 'instagram',
-				link  : 'https://www.instagram.com/prasannavijayan',
-				class  : 'icon-instagram'
-			},
+			socialIcons : [
 			{
 				title : 'twitter',
 				link  : 'https://twitter.com/prasannavijayan',
@@ -47,18 +47,27 @@ export default Service.extend({
 				title: 'aboutme',
 				description: 'aboutme_description',
 				icon: 'terminal',
-				bkg: 'bg-grey'
+				bkg: 'bg-grey',
+				tags : this.get( 'i18n' ).t('aboutme_tag').string.split(','),
+				quote: this.get( 'i18n' ).t('quote').string
 			}, {
 				title: 'bragging',
 				description: 'bragging_description',
 				icon: 'rocket',
 				bkg: 'bg-blue'
 			},{
+				title: 'contribution',
+				description: 'contribution_description',
+				icon: 'github',
+				bkg: 'bg-grey',
+				tags: this.get( 'i18n' ).t('contribution_tag').string.split(',')
+				},
+			{
 				title: 'download',
 				description: 'download_description',
 				icon: 'download',
 				link: 'https://tinyurl.com/ybwf2brv',
-				bkg: 'bg-grey'
+				bkg: 'bg-blue'
 			}]
 		}
 
