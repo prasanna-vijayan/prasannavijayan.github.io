@@ -1,7 +1,7 @@
 .herounit {
 	height: 70vh;
-	background: rgb(87,134,215);
-	background: linear-gradient(90deg, rgba(87,134,215,1) 0%, rgba(43,141,191,1) 35%, rgba(49,156,223,1) 100%);
+	background-color: $black-color;
+	background-image: url('../assets/hexagon.png');
 
 	h1 {
 		color: #fefefe;
