@@ -10,7 +10,7 @@ export default Component.extend({
 		let iconWidth = this.get("userData.variables.socialIcons").length * 40;
 		this.$('.social-icons').css('width', `${iconWidth}px`);
 
-		this.$('[data-toggle="tooltip"]').tooltip();
+		this.$('[data-toggle="tooltip"]').tooltip('show');
   },
 
   socialIcons : computed('userData', function() {

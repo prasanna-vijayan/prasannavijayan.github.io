@@ -5,9 +5,10 @@
 
 
 // Colors
-$blue-color : #74b9ff !default;
+$blue-color  : #74b9ff !default;
 $black-color : #343a40 !default;
-$grey-color : #f5f6fa !default;
+$dark-black  : #101010 !default;
+$grey-color  : #f5f6fa !default;
 
 // // Background Colors
 .bg {
@@ -32,18 +33,20 @@ $grey-color : #f5f6fa !default;
 	}
 }
 
-// // Layout
-// .herounit {
-// 	div {
-// 		height: 90vh;
-// 	}
-// }
+// Tooltip
+.tooltip {
 
-// // // Logo
-// // .logo {
-// // 	width: 100px;
-// // 	height: 50px;
-// // }
+	.arrow {
+		display: none;
+	}
+
+	&-inner {
+		padding: 7px 12px;
+		background: $dark-black;
+		min-width: 90px;
+	}
+
+}
 
 @import '../component-styles/header';
 @import '../component-styles/herounit';
