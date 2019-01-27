@@ -1,5 +1,5 @@
 {{#each sectionDetails as | sectionDetail |}}
-<div class="section">
+<div class="section {{sectionDetail.bkgImage}}">
 	<div class="container d-flex flex-column">
 			<div class="title">{{fa-icon sectionDetail.icon }} {{t sectionDetail.title}}</div>
 			{{#if sectionDetail.link}}
@@ -22,4 +22,3 @@
 	</div>
 </div>
 {{/each}}
-{{image-mountain}}
