@@ -71,7 +71,7 @@ export default Service.extend({
 				description: 'download_description',
 				icon: 'download',
 				link: 'https://tinyurl.com/ybwf2brv',
-				bkg: 'bg-grey'
+				bkgImage: 'image-mountain',
 			}]
 		}
 
