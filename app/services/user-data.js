@@ -52,26 +52,19 @@ export default Service.extend({
 				description: 'aboutme_description',
 				icon: 'terminal',
 				bkg: 'bg-grey',
-				tags : this.get( 'i18n' ).t('aboutme_tag').string.split(','),
-				quote: this.get( 'i18n' ).t('quote').string
-			}, {
-				title: 'bragging',
-				description: 'bragging_description',
-				icon: 'rocket',
-				bkg: 'bg-grey'
+				tags : this.get( 'i18n' ).t('aboutme_tag').string.split(',')
 			},{
 				title: 'contribution',
 				description: 'contribution_description',
 				icon: 'github',
 				bkg: 'bg-grey',
 				tags: this.get( 'i18n' ).t('contribution_tag').string.split(',')
-				},
-			{
+			},{
 				title: 'download',
 				description: 'download_description',
 				icon: 'download',
 				link: 'https://tinyurl.com/ybwf2brv',
-				bkgImage: 'image-mountain',
+				quote: this.get( 'i18n' ).t('quote').string
 			}]
 		}
 

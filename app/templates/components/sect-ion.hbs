@@ -1,7 +1,6 @@
 {{#each sectionDetails as | sectionDetail |}}
 <div class="section {{sectionDetail.bkgImage}}">
   <div class="container d-flex flex-column">
-    <div class="title">{{fa-icon sectionDetail.icon }} {{t sectionDetail.title}}</div>
     {{#if sectionDetail.link}}
       <div class="subsection">{{t sectionDetail.description link=sectionDetail.link}}</div>
     {{else}}
@@ -12,13 +11,13 @@
       <div class="quote"><span>"</span>{{sectionDetail.quote}}</div>
     {{/if}}
 
-    {{#if sectionDetail.tags}}
+    {{!-- {{#if sectionDetail.tags}}
       <div class="tag_list">
         {{#each sectionDetail.tags as | tag |}}
           <div class="tag bg-green">{{tag}}</div>
         {{/each}}
       </div>
-    {{/if}}
+    {{/if}} --}}
   </div>
 </div>
 {{/each}}
