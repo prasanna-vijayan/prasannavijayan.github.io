@@ -3,7 +3,9 @@
 @import "theme/style";
 
 // Fonts
-body {
+html, body {
+  height: 100%;
+  position: relative;
 	outline: 0;
 	font-size: 18px;
 	margin: 0;

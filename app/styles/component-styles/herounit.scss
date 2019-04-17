@@ -1,21 +1,14 @@
 .herounit {
-	height: 70vh;
-	background-color: $black-color;
-	background-image: url('../assets/hexagon.png');
-
-	h1 {
-		color: #fefefe;
-	}
-
+  height: 140px;
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
 	.image-round {
-		width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    margin-bottom: 100px;
-    border: 5px solid $grey-color;
-	}
-
-	.underline {
-		text-decoration: underline;
+		width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border: 2px solid $grey-color;
+    margin-right: 20px;
 	}
 }
