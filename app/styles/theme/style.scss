@@ -1,14 +1,15 @@
 // // style.scss
 
-@import 'fonts';
-// // Variables
-
-
 // Colors
 $blue-color  : #74b9ff !default;
 $black-color : #343a40 !default;
 $dark-black  : #101010 !default;
 $grey-color  : #f5f6fa !default;
+$red-color   : #bd2130 !default;
+
+
+@import 'fonts';
+// // Variables
 
 // // Background Colors
 .bg {
@@ -46,6 +47,10 @@ $grey-color  : #f5f6fa !default;
 		min-width: 90px;
 	}
 
+}
+
+.no-margin {
+	margin: 0;
 }
 
 @import '../component-styles/header';
