@@ -31,10 +31,6 @@ module.exports = function(environment) {
       navigation: [{
         label: 'blog',
         route: 'blog'
-      }, {
-        label: 'Built by Chris Manson',
-        route: 'page',
-        id: 'chris-manson'
       }]
     },
 
@@ -76,6 +72,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.blog.host = 'https://pvy.me/blog';
   }
 
 

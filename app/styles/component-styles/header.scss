@@ -9,6 +9,12 @@
 		background: transparent;
 	}
 
+	.action-links {
+    justify-content: flex-start;
+    flex: 2;
+    display: flex;
+	}
+
 	.social-icons {
 		width: 120px;
 		@extend .justify-content-between;

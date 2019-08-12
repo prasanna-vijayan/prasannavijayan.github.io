@@ -1,0 +1,40 @@
+{{head-layout}}
+
+    <div class="site-wrapper">
+
+        {{outlet}}
+
+        {{#if showFooter}}
+            <footer class="site-footer outer footer">
+                <div class="site-footer-content inner">
+                    <section class="copyright"><a href={{blog.url}}>Pvy</a> &copy; {{date format="YYYY"}}</section>
+                    <nav class="site-footer-nav">
+                        {{#link-to 'index'}}Latest Posts{{/link-to}}
+                        {{#if blog.facebook}}<a href="https://facebook.com/{{blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
+                        {{#if blog.twitter}}<a href="https://twitter.com/{{blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+                    </nav>
+                </div>
+            </footer>
+        {{/if}}
+
+    </div>
+
+    {{#if showFooter}}
+        {{#if @labs.subscribers}}
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                {{#if @site.logo}}
+                    <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
+                {{/if}}
+                <h1 class="subscribe-overlay-title">Subscribe to {{@site.title}}</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                {{subscribe_form placeholder="youremail@example.com"}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if pagination.pages}}
+        <script src="{{asset "built/infinitescroll.js"}}"></script>
+        {{/if}}
+    {{/if}}

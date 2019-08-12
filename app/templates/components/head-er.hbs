@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light container justify-content-between">
-  <a class="navbar-brand" href="#"><img alt="Pvy Icon" src={{userData.variables.images.logoURL}} class="logo"></a>
+  <a class="navbar-brand" href="/"><img alt="Pvy Icon" src={{userData.variables.images.logoURL}} class="logo"></a>
+  <div class="action-links">
+    {{#link-to 'blog'}} {{t 'blog'}} {{/link-to}}
+  </div>
   <div>
     <div class="form-inline my-2 my-lg-0 social-icons">
       {{#each socialIcons as | social |}}

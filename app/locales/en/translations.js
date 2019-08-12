@@ -10,5 +10,6 @@ export default {
 	download_description: '<a target="_blank" href={{link}}>Download/View Resume</a>',
 	contribution: 'Contribution',
 	contribution_description: "Recently, I've started doing some open source contribution. Well, that's really fun to play around and feels excited, when someone likes your work, which keeps us move forward to do more. Well, if you are into open source, you should try sometime.",
-	contribution_tag: 'ember-learn/ember-help-wanted, ember-learn/ember-styleguide, pe7-icon, full-calendar-wrapper'
+	contribution_tag: 'ember-learn/ember-help-wanted, ember-learn/ember-styleguide, pe7-icon, full-calendar-wrapper',
+	blog: 'Blog'
 };

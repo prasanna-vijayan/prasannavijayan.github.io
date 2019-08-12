@@ -1,24 +1,10 @@
 
 {{!< default}}
 
-<Header @background={{blog.coverImage}}> {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                {{#if blog.logo}}
-                    <img class="site-logo" src={{blog.logo}} alt={{blog.title}} />
-                {{else}}
-                    {{blog.title}}
-                {{/if}}
-            </h1>
-            <h2 class="site-description">{{blog.description}}</h2>
-        </div>
-        <SiteNav />
-    </div>
-</Header>
+{{head-er userData=userData}}
 
 {{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
+<div id="site-main" class="site-main outer margin-top-100">
     <div class="inner">
 
         <div class="post-feed">
@@ -31,4 +17,4 @@
         </div>
 
     </div>
-</main>
+</div>

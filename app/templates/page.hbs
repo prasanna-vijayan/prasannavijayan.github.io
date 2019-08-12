@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{head-er userData=userData}}
+
+{{#let model as |post|}}
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full {{post_class}} {{unless post.image 'no-image'}}">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">{{post.title}}</h1>
+            </header>
+
+            {{#if post.image}}
+            <figure class="post-full-image">
+                <ResponsiveImage @image={{responsive-image-url post.image}} />
+            </figure>
+            {{/if}}
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    {{markdown-to-html post.content tagName=""}}
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+{{/let}}

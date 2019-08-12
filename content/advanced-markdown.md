@@ -6,10 +6,10 @@ imageMeta:
   attributionLink:
 featured: true
 authors:
-  - ghost
+  - pvy
 date: Tue Jun 12 2018 17:50:55 GMT+0100 (IST)
 tags:
-  - getting-started
+  - js
 ---
 
 There are lots of powerful things you can do with the Markdown
