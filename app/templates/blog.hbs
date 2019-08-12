@@ -1,0 +1,34 @@
+
+{{!< default}}
+
+<Header @background={{blog.coverImage}}> {{!--Special header.hbs partial to generate the <header> tag--}}
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{#if blog.logo}}
+                    <img class="site-logo" src={{blog.logo}} alt={{blog.title}} />
+                {{else}}
+                    {{blog.title}}
+                {{/if}}
+            </h1>
+            <h2 class="site-description">{{blog.description}}</h2>
+        </div>
+        <SiteNav />
+    </div>
+</Header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <div class="post-feed">
+            {{#each (sort-by 'date:desc' model) as |post index|}}
+
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                <PostCard @index={{index}} @post={{post}}/>
+
+            {{/each}}
+        </div>
+
+    </div>
+</main>
