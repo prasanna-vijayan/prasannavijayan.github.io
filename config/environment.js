@@ -27,7 +27,7 @@ module.exports = function(environment) {
       title: 'Pvy',
       description: 'Static Blog System - Built with Ember',
       coverImage: '/images/blog-cover.jpg',
-
+      rssLogo: '/assets/pvy.svg',
       navigation: [{
         label: 'blog',
         route: 'blog'
