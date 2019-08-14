@@ -1,5 +1,5 @@
 ---
-title: Advanced Markdown tips
+title: Use Promise Better with EmberJS
 image: /images/advanced.jpg
 imageMeta:
   attribution:
@@ -7,13 +7,17 @@ imageMeta:
 featured: true
 authors:
   - pvy
-date: Tue Jun 12 2018 17:50:55 GMT+0100 (IST)
+date: Tue Aug 14 2018 GMT+0530 (IST)
 tags:
-  - js
+  - ember
 status: published
 ---
 
-There are lots of powerful things you can do with the Markdown
+There are lot of things you can do with Promise. Today, I will share my experience on using promise better with some examples I used in EmberJS.
+
+If you don't know much about EmberJs or Promise. Please visit [EmberJS](http://emberjs.com) and [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for get your basics up
+
+Promise introduced into the world of Javascript to avoid making multiple callbacks.
 
 If you've gotten pretty comfortable with [all the basics](/the-editor/) of writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do!
 

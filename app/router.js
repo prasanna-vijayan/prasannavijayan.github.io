@@ -8,7 +8,6 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route( 'blog' );
-  this.route( 'page', { path: '/:id'} );
   this.route( '404', { path: '/*path' } );
 });
 

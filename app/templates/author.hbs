@@ -21,7 +21,7 @@
                     <div class="author-location">{{author.location}} <span class="bull">&bull;</span></div>
                 {{/if}}
                 <div class="author-stats">
-                    {{plural author.posts.length empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
+                    {{plural getLength empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
                 </div>
                 {{#if author.website}}
                     <a class="social-link social-link-wb" href={{author.website}} target="_blank" rel="noopener">{{svg-icons/website}}</a>
@@ -45,10 +45,9 @@
 
         <div class="post-feed">
             {{#each (sort-by 'date:desc' model.posts) as |post|}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                <PostCard @post={{post}}/>
-
+                {{#if post.status}}
+                    <PostCard @post={{post}}/>
+                {{/if}}
             {{/each}}
         </div>
 
