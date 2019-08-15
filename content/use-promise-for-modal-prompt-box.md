@@ -1,5 +1,5 @@
 ---
-title: Promise for bootstrap Modal
+title: Use Promise for Modal (Prompt box)
 image: /images/advanced.jpg
 featured: true
 author:
