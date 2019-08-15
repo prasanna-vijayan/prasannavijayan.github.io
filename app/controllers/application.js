@@ -7,7 +7,8 @@ export default Controller.extend({
   router: service(),
 
   showFooter: computed( 'router.currentRoute.name', function() {
-    if ( this.get( 'router' ).currentRoute.name === 'index' ) {
+    let route = this.get( 'router' ).currentRoute.name;
+    if ( ['index', 'examples'].includes( route ) ) {
       return false;
     }
     return true;

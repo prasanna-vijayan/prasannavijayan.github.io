@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light container justify-content-between">
+<nav class="navbar header navbar-expand-lg navbar-light container justify-content-between">
   <a class="navbar-brand" href="/"><img alt="Pvy Icon" src={{userData.variables.images.logoURL}} class="logo"></a>
   <div class="action-links">
     {{#link-to 'blog'}} {{t 'blog'}} {{/link-to}}
@@ -11,3 +11,8 @@
     </div>
   </div>
 </nav>
+{{#if blog}}
+  <div class="d-flex tips-tricks container">
+    Tips/Tricks
+  </div>
+{{/if}}

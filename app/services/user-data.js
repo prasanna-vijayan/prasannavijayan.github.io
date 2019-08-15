@@ -3,8 +3,9 @@ import { inject as service } from '@ember/service';
 
 export default Service.extend({
 
-	i18n      : service(),
-	variables : undefined,
+	i18n       : service(),
+	variables  : undefined,
+	currentCom : undefined,
 
 	init() {
 		this._super( ...arguments );

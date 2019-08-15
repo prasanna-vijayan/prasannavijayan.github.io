@@ -1,0 +1,21 @@
+<BsButton @onClick={{action 'promiseClicked'}}> Promise </BsButton>
+
+<BsModal
+  @open={{show}}
+  @onSubmit={{action "response" true}}
+  @onHidden={{action "response" false}} as |modal|>
+  <modal.header>
+    <h4 class="modal-title">
+      Custom Dialog
+      <div class="badge">2</div>
+    </h4>
+  </modal.header>
+  <modal.body>
+    Promise Example?
+    Check console when you click "Cancel or Save".
+  </modal.body>
+  <modal.footer>
+    <BsButton @onClick={{action "response" false}}>Cancel</BsButton>
+    <BsButton @type="success" @onClick={{action "response" true}}>Save</BsButton>
+  </modal.footer>
+</BsModal>
